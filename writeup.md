@@ -23,9 +23,9 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I run the canny API from opencv to detect the canny, then I select possible region use "region_of_interest", then I get lines through hough transfer, at the end, I drew the lines at the origin image.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by the slope of the line.
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
@@ -35,13 +35,10 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+One potential shortcoming would be what would happen when the view is not at this region.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to use more inspire thought to make it more stronger.
 
-Another potential improvement could be to ...
